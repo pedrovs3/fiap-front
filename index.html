@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech - RM554903</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            contrast: "#31B988",
+            darkerContrast: "#1E7F5F",
+            foreground: "#F5F5F5"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"
+    />
+</head>
+<body class="gradient-bg dark flex flex-col justify-between">
+  <main class="w-full max-w-screen-2xl flex-1 flex items-center justify-center">
+    <section class="flex gap-4 w-full items-center justify-evenly">
+      <img src="./src/images/illustration.svg" alt="illustration" class="flex-1 max-w-[500px]">
+      <div class="flex justify-center flex-col w-full max-w-96">
+        <h1 class="text-4xl font-semibold text-white">Fintech</h1>
+        <span class="text-foreground/70 pb-5">
+          Faça parte da revolução financeira
+        </span>
+        <form action="" class="w-full flex flex-col gap-4 h-full">
+          <div class="relative w-full h-fit">
+            <input type="text" placeholder="Digite seu e-mail" class="px-5 py-[15px] text-foreground bg-transparent border-2 border-foreground/15 w-full rounded-xl focus:outline-none focus:border-foreground/30 transition-all ease-in-out focus-visible:outline-none" />
+            <img src="./src/images/icons/user-circle.svg" class="absolute right-4 top-1/2 transform -translate-y-[50%]" alt="">
+          </div>
+          <div class="relative w-full h-fit">
+            <input type="password" placeholder="Digite sua senha" class="px-5 py-[15px] text-foreground bg-transparent border-2 border-foreground/15 w-full rounded-xl focus:outline-none focus:border-foreground/30 transition-all ease-in-out focus-visible:outline-none" />
+            <img src="./src/images/icons/lock.svg" class="absolute right-4 top-1/2 transform -translate-y-[50%]" alt="">
+          </div>
+          <a href="#" class="self-end text-foreground/70 font-normal text-xs hover:text-foreground transition-all ease-in-out">Esqueci minha senha</a>
+          
+          <button class="w-full mt-7 bg-contrast rounded-full text-foreground px-5 py-[15px] text-lg hover:bg-darkerContrast transition-all ease-in-out font-bold">Entrar</button>
+          <span class="text-foreground/70 flex items-center justify-center flex-col text-sm">Ainda não possui uma conta? <br/><a href="#" class="text-foreground">Clique aqui</a></span>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="py-4 text-foreground/40 font-normal">
+    Feito por Pedro Silva - RM554903
+  </footer>
+</body>
+</html>
