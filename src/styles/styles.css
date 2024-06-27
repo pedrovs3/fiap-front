@@ -7,14 +7,17 @@
 body {
   font-family: 'Sora', sans-serif;
   min-height: 100dvh;
-  width: 100vw;
-  font-smooth: antialiased;
+  width: 100dvw;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
 .gradient-bg {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), linear-gradient(223deg, #004E92 15.64%, #000428 82.57%);
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
